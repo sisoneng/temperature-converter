@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style rel="stylesheet">
+    .center-block {
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    .custom-control-size {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+
+<body class="bg-secondary">
+  <div class="text-center bg-dark">
+    <h1 class="display-4 text-primary pt-2">Convertemperature</h1>
+    <p class="font-italic text-secondary pb-5">Made by <strong>Ni&ntilde;o Warren Sison </strong><span
+        class="badge badge-pill badge-primary">Developer</span></p>
+  </div>
+  <div class="center-block w-25 mt-5">
+    <input type="number" maxlength="5" placeholder="Enter a value" id="user-input"
+      class="custom-control-size border-0 text-primary form-control text-right text-white bg-dark" autofocus>
+  </div>
+
+  <div class="center-block mt-3">
+    <div class="custom-control custom-radio custom-control-inline">
+      <input checked type="radio" class="custom-control-input" id="celsiusType" name="temperatures">
+      <label class="custom-control-label" for="celsiusType">Celsius</label>
+    </div>
+
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="fahrenheitType" name="temperatures">
+      <label class="custom-control-label" for="fahrenheitType">Fahrenheit</label>
+    </div>
+
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="kelvinType" name="temperatures">
+      <label class="custom-control-label" for="kelvinType">Kelvin</label>
+    </div>
+  </div>
+
+  <div class="center-block w-25">
+    <div class="input-group-lg mt-5">
+      <label class="h6" for="celsius-out">Celsius</label>
+      <p id="celsius-out" class="h3 text-right text-dark">0&deg;C</p>
+      <label class="h6" for="farhenheit-out">Fahrenheit</label>
+      <p id="fahrenheit-out" class="h3 text-right text-dark">0&deg;F</p>
+      <label class="h6" for="kelvin-out">Kelvin</label>
+      <p id="kelvin-out" class="h3 text-right text-dark">0 K</p>
+    </div>
+  </div>
+  <button type="button" id="clear-btn" class="center-block btn btn-outline-dark w-25 mt-4">Clear</button>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>
